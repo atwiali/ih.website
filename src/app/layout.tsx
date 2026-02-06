@@ -14,7 +14,10 @@ const readexPro = Readex_Pro({
   display: "swap",
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ih-health.center";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "مركز الإمام الحسين (ع) الصحي - مركز صحي في برج البراجنة",
   description:
     "مركز صحي في برج البراجنة يقدم تحاليل دم، أشعة صوتية، ومختبر متطور. أفضل أطباء اختصاص في عيادات تخصصية، أشعة وتشخيص. مركز الإمام الحسين (ع) الصحي لرعايتكم.",
@@ -32,6 +35,7 @@ export const metadata: Metadata = {
     title: "مركز الإمام الحسين (ع) الصحي - مركز صحي في برج البراجنة",
     description:
       "مركز صحي في برج البراجنة: تحاليل دم، أشعة صوتية، أفضل أطباء اختصاص. عيادات تخصصية، مختبر، أشعة وتشخيص.",
+    images: ["/ih.jpeg"],
   },
   icons: {
     icon: "/images/favicon.png",

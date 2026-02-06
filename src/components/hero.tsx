@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 // استخدم هذا الرابط مع أي فيديو حقيقي تريده (YouTube embed URL)
 const YOUTUBE_EMBED_URL =
-  "https://www.youtube.com/embed/dQw4w9WgXcQ";
+  "https://www.youtube.com/embed/vPDn7OW04Bc";
 
 export function Hero() {
   return (
