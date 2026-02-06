@@ -3,16 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import {
-  Menu,
-  X,
-  Home,
-  Stethoscope,
-  TestTube,
-  Scan,
-  CalendarDays,
-  Phone,
-} from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -20,18 +11,19 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import { CONTACT_INFO } from "@/lib/constants";
 
 const SCROLL_THRESHOLD = 20;
-const PHONE_TEL = "tel:+9611454644";
-const WHATSAPP_URL = "https://wa.me/96176040882";
 
 const navLinks = [
-  { href: "#hero", label: "الرئيسية", icon: Home },
-  { href: "#clinics", label: "العيادات", icon: Stethoscope },
-  { href: "#lab", label: "المختبر", icon: TestTube },
-  { href: "#radiology", label: "الأشعة", icon: Scan },
-  { href: "#doctors", label: "دوام الأطباء", icon: CalendarDays },
-  { href: "#contact", label: "اتصل بنا", icon: Phone },
+  { href: "#hero", label: "الرئيسية" },
+  { href: "#about", label: "من نحن" },
+  { href: "#clinics", label: "العيادات" },
+  { href: "#services", label: "الخدمات" },
+  { href: "#doctors", label: "دوام الأطباء" },
+  { href: "#testimonials", label: "آراء المرضى" },
+  { href: "#faq", label: "الأسئلة" },
+  { href: "#contact", label: "اتصل بنا" },
 ];
 
 function NavLinks({
@@ -45,19 +37,18 @@ function NavLinks({
 }) {
   return (
     <nav className={cn("flex flex-wrap items-center gap-1 sm:gap-2", className)}>
-      {navLinks.map(({ href, label, icon: Icon }) => (
+      {navLinks.map(({ href, label }) => (
         <Link
           key={href}
           href={href}
           onClick={onClick}
           className={cn(
-            "rounded-md px-3 py-2 text-sm font-medium transition-colors inline-flex items-center gap-2",
+            "rounded-md px-3 py-2 text-sm font-medium transition-colors",
             scrolled
               ? "text-white hover:bg-white/20 hover:text-white"
               : "text-foreground hover:bg-primary/10 hover:text-primary"
           )}
         >
-          <Icon className="h-4 w-4 shrink-0" />
           {label}
         </Link>
       ))}
@@ -157,7 +148,7 @@ export function Navbar() {
                 </Link>
               </div>
               <nav className="flex flex-col gap-0 p-3 flex-1 overflow-y-auto">
-                {navLinks.map(({ href, label, icon: Icon }) => {
+                {navLinks.map(({ href, label }) => {
                   const isActive = activeHash === href;
                   return (
                     <Link
@@ -165,13 +156,12 @@ export function Navbar() {
                       href={href}
                       onClick={() => setOpen(false)}
                       className={cn(
-                        "flex items-center gap-3 rounded-lg px-3 py-3 text-sm font-medium transition-colors",
+                        "rounded-lg px-3 py-3 text-sm font-medium transition-colors text-right",
                         isActive
                           ? "bg-primary text-primary-foreground"
                           : "text-foreground hover:bg-muted"
                       )}
                     >
-                      <Icon className="h-5 w-5 shrink-0" />
                       {label}
                     </Link>
                   );
@@ -183,10 +173,10 @@ export function Navbar() {
                 </p>
                 <div className="flex flex-col gap-2">
                   <Button asChild className="w-full rounded-xl bg-primary hover:bg-primary/90">
-                    <a href={PHONE_TEL}>اتصل بنا هاتفياً</a>
+                    <a href={CONTACT_INFO.phone.tel}>اتصل بنا هاتفياً</a>
                   </Button>
                   <Button asChild variant="outline" className="w-full rounded-xl border-[#25D366] text-[#25D366] hover:bg-[#25D366]/10">
-                    <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                    <a href={CONTACT_INFO.whatsapp.url} target="_blank" rel="noopener noreferrer">
                       واتساب
                     </a>
                   </Button>

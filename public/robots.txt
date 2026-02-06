@@ -1,0 +1,16 @@
+# robots.txt for مركز الإمام الحسين (ع) الصحي
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas (if any in future)
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://ih-health.center/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
