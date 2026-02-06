@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { faqs, faqCategories } from "@/data/faq";
 import { cn } from "@/lib/utils";
+import { CONTACT_INFO } from "@/lib/constants";
 
 export function FAQSection() {
   const [openId, setOpenId] = useState<string | null>(null);
@@ -110,18 +111,18 @@ export function FAQSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="tel:+9611454644"
+              href={CONTACT_INFO.phone.tel}
               className="inline-flex items-center justify-center rounded-xl bg-primary px-6 py-3 text-white font-medium hover:opacity-90 transition-opacity"
             >
-              اتصل بنا: 01-454644
+              اتصل بنا: <span dir="ltr" className="mr-1">{CONTACT_INFO.phone.display}</span>
             </a>
             <a
-              href="https://wa.me/96176040882"
+              href={CONTACT_INFO.whatsapp.url}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-xl bg-[#25D366] px-6 py-3 text-white font-medium hover:opacity-90 transition-opacity"
             >
-              واتساب: 76-040882
+              واتساب: <span dir="ltr" className="mr-1">76-040882</span>
             </a>
           </div>
         </div>

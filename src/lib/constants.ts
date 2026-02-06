@@ -11,16 +11,16 @@ export const SITE_CONFIG = {
 
 export const CONTACT_INFO = {
   phone: {
-    display: "01-454644",
+    display: "\u200e01-454644",
     tel: "tel:+9611454644",
     international: "+961 1 454644",
   },
   whatsapp: {
     number: "96176040882",
     url: "https://wa.me/96176040882",
-    displayNumber: "+961 76 040 882",
+    displayNumber: "\u200e+961 76 040 882",
   },
-  email: "info@ih-health.center", // Update with actual email
+  email: "ih.healthcenter@gmail.com", // Update with actual email
   address: {
     full: "برج البراجنة - نزلة مستشفى الرسول الأعظم - مقابل بناية الموسوي",
     city: "برج البراجنة",

@@ -28,7 +28,7 @@ export function Hero() {
             مركز طبي متكامل يضم <strong className="text-foreground">{STATISTICS.specialists} طبيب اختصاصي</strong> و<strong className="text-foreground">{STATISTICS.clinics} عيادة تخصصية</strong>، مع مختبر وأشعة متطورة - كل ما تحتاجونه تحت سقف واحد.
           </p>
 
-          <div className="flex flex-col gap-3 w-full md:w-auto md:flex-row md:flex-wrap md:justify-end">
+          <div className="flex flex-col gap-3 w-full md:flex-row md:flex-wrap md:justify-start">
             <Button 
               asChild 
               size="lg" 
@@ -52,7 +52,7 @@ export function Hero() {
             >
               <a href={CONTACT_INFO.phone.tel} className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
-                اتصل بنا: {CONTACT_INFO.phone.display}
+                اتصل بنا: <span dir="ltr">{CONTACT_INFO.phone.display}</span>
               </a>
             </Button>
           </div>

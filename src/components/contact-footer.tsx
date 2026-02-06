@@ -11,8 +11,8 @@ export function ContactFooter() {
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Column 1: About */}
-          <div className="text-right space-y-4">
-            <div className="flex items-center gap-2 justify-end">
+          <div className="space-y-4">
+            <div className="flex items-center gap-2 justify-start">
               <Image
                 src="/images/favicon.png"
                 alt=""
@@ -22,10 +22,10 @@ export function ContactFooter() {
               />
               <h3 className="font-bold text-lg">{SITE_CONFIG.nameShort}</h3>
             </div>
-            <p className="text-white/80 text-sm leading-relaxed">
+            <p className="text-white/80 text-sm leading-relaxed text-right">
               مركز طبي متكامل يقدم خدمات صحية شاملة بأعلى معايير الجودة والرعاية الطبية المتخصصة.
             </p>
-            <div className="flex items-center justify-end gap-3">
+            <div className="flex items-center justify-start gap-3">
               <a
                 href={CONTACT_INFO.phone.tel}
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
@@ -107,39 +107,41 @@ export function ContactFooter() {
           <div className="text-right space-y-4">
             <h3 className="font-bold text-lg mb-4">تواصل معنا</h3>
             <div className="space-y-3 text-sm">
-              <div className="flex items-start gap-2 justify-end">
+              <div className="flex items-start gap-2 justify-start">
+                <MapPin className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
                 <div className="text-white/80 flex-1 text-right">
                   {CONTACT_INFO.address.full}
                 </div>
-                <MapPin className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
               </div>
-              <div className="flex items-center gap-2 justify-end">
+              <div className="flex items-center gap-2 justify-start">
+                <Phone className="h-5 w-5 text-secondary shrink-0" />
                 <a 
                   href={CONTACT_INFO.phone.tel}
                   className="text-white/80 hover:text-white transition-colors"
+                  dir="ltr"
                 >
                   {CONTACT_INFO.phone.international}
                 </a>
-                <Phone className="h-5 w-5 text-secondary shrink-0" />
               </div>
-              <div className="flex items-center gap-2 justify-end">
+              <div className="flex items-center gap-2 justify-start">
+                <WhatsAppIcon className="h-5 w-5 text-secondary shrink-0" />
                 <a 
                   href={CONTACT_INFO.whatsapp.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/80 hover:text-white transition-colors"
+                  dir="ltr"
                 >
                   {CONTACT_INFO.whatsapp.displayNumber}
                 </a>
-                <WhatsAppIcon className="h-5 w-5 text-secondary shrink-0" />
               </div>
-              <div className="flex items-start gap-2 justify-end">
+              <div className="flex items-start gap-2 justify-start">
+                <Clock className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
                 <div className="text-white/80 flex-1 text-right">
                   {CONTACT_INFO.workingHours.ar}
                   <br />
                   <span className="text-xs">({CONTACT_INFO.workingHours.note})</span>
                 </div>
-                <Clock className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
               </div>
             </div>
           </div>
@@ -176,7 +178,7 @@ export function ContactFooter() {
               © {new Date().getFullYear()} {SITE_CONFIG.name} - جميع الحقوق محفوظة
             </p>
             <p className="text-center md:text-left">
-              صُمم بـ ❤️ لخدمة مجتمعنا
+              Powered by <a href="https://devycode.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-white hover:text-secondary transition-colors">Devy Code</a>
             </p>
           </div>
         </div>
