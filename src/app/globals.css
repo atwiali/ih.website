@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --primary: #0397d5;
+    --primary-foreground: #ffffff;
+    --secondary: #a1c53e;
+    --secondary-foreground: #ffffff;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 199 96% 42%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-[#fafafa] text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  [id] {
+    scroll-margin-top: 4rem;
+  }
+}
+
+@layer utilities {
+  .bg-primary-gradient {
+    background: linear-gradient(135deg, #0397d5 0%, #0284c7 50%, #0369a1 100%);
+  }
+  .bg-footer-gradient {
+    /* Professional footer: darker base + subtle brand accents (different from header) */
+    background: linear-gradient(135deg, #0b2a3a 0%, #045a82 55%, #0b6b54 100%);
+  }
+  .shadow-soft {
+    box-shadow: 0 4px 14px 0 rgb(3 151 213 / 0.08);
+  }
+  .shadow-soft-hover {
+    box-shadow: 0 8px 24px 0 rgb(3 151 213 / 0.12);
+  }
+}
