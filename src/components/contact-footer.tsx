@@ -11,8 +11,8 @@ export function ContactFooter() {
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Column 1: About */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-2 justify-start">
+          <div className="space-y-4 flex flex-col items-center md:items-start">
+            <div className="flex items-center gap-2 justify-center md:justify-start">
               <Image
                 src="/images/favicon.png"
                 alt=""
@@ -22,10 +22,10 @@ export function ContactFooter() {
               />
               <h3 className="font-bold text-lg">{SITE_CONFIG.nameShort}</h3>
             </div>
-            <p className="text-white/80 text-sm leading-relaxed text-right">
+            <p className="text-white/80 text-sm leading-relaxed text-center md:text-right">
               مركز طبي متكامل يقدم خدمات صحية شاملة بأعلى معايير الجودة والرعاية الطبية المتخصصة.
             </p>
-            <div className="flex items-center justify-start gap-3">
+            <div className="flex items-center justify-center md:justify-start gap-3">
               <a
                 href={CONTACT_INFO.phone.tel}
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
