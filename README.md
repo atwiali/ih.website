@@ -51,9 +51,9 @@ A modern, professional healthcare center website built with Next.js 14, TypeScri
 ## 📊 Statistics
 
 - **50,000+** Satisfied Patients
-- **15+** Years of Experience
+- **30+** Years of Experience
 - **18** Specialized Clinics
-- **15+** Specialist Doctors
+- **30+** Specialist Doctors
 
 ## 🚀 Getting Started
 

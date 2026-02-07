@@ -151,7 +151,7 @@ export function ContactFooter() {
         <div className="mb-8">
           <div className="aspect-video max-w-4xl mx-auto overflow-hidden rounded-xl border-2 border-white/20 bg-white/5 shadow-lg">
             <iframe
-              src="https://www.google.com/maps?q=%D8%A8%D8%B1%D8%AC+%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D8%AC%D9%86%D8%A9+%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89+%D8%A7%D9%84%D8%B1%D8%B3%D9%88%D9%84+%D8%A7%D9%84%D8%A3%D8%B9%D8%B8%D9%85&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.918804618774!2d35.50012587570776!3d33.8418387732363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f19006599b519%3A0xe5a2a2298642a8b!2zMzPCsDUwJzMwLjYiTiAzNcKwMzAnMDkuNyJF!5e0!3m2!1sen!2slb!4v1738939800000!5m2!1sen!2slb"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="h-full w-full border-0"
@@ -160,7 +160,7 @@ export function ContactFooter() {
           </div>
           <div className="text-center mt-3">
             <a
-              href="https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%B1%D8%AC+%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D8%AC%D9%86%D8%A9+%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89+%D8%A7%D9%84%D8%B1%D8%B3%D9%88%D9%84+%D8%A7%D9%84%D8%A3%D8%B9%D8%B8%D9%85"
+              href="https://www.google.com/maps/place/33%C2%B050'30.6%22N+35%C2%B030'09.7%22E/@33.8418388,35.5001259,17z/data=!3m1!4b1!4m4!3m3!8m2!3d33.8418388!4d35.5027008?hl=en&entry=ttu"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-secondary transition-colors"

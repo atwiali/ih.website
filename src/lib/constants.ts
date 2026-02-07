@@ -11,7 +11,7 @@ export const SITE_CONFIG = {
 
 export const CONTACT_INFO = {
   phone: {
-    display: "\u200e01-454644",
+    display: "01-454644",
     tel: "tel:+9611454644",
     international: "+961 1 454644",
   },
@@ -64,10 +64,10 @@ export const MEDIA = {
 } as const;
 
 export const STATISTICS = {
-  yearsOfService: 15, // Update with actual number
+  yearsOfService: 30, // Update with actual number
   patientsServed: "50,000+", // Update with actual number
-  specialists: "15+",
-  clinics: 18,
+  specialists: "35+",
+  clinics: "19+",
   successRate: "98%", // Update with actual number
 } as const;
 
@@ -124,11 +124,11 @@ export const SERVICES = {
       "تشخيص دقيق باستخدام الأشعة السينية (X-Ray)، التصوير الصوتي (Echo)، البانوراما الرقمية للأسنان، وتخطيط السمع والقلب.",
     features: [
       "أشعة سينية (X-Ray)",
-      "تصوير صوتي (Ultrasound)",
-      "بانوراما الأسنان الرقمية",
+      "بانوراما الأسنان (Panoramic)",
+      "إيكو (Echo / Ultrasound)",
+      "إيكو دوبلر (Echo Doppler)",
       "تخطيط القلب (ECG)",
       "تخطيط السمع",
-      "إيكو القلب",
     ],
   },
 } as const;

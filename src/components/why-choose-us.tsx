@@ -78,11 +78,11 @@ export function WhyChooseUs() {
             <div className="text-sm text-muted-foreground">دعم عبر واتساب</div>
           </div>
           <div className="text-center p-4 rounded-xl bg-primary/5">
-            <div className="text-2xl font-bold text-primary mb-1">18</div>
+            <div className="text-2xl font-bold text-primary mb-1">19+</div>
             <div className="text-sm text-muted-foreground">عيادة تخصصية</div>
           </div>
           <div className="text-center p-4 rounded-xl bg-secondary/10">
-            <div className="text-2xl font-bold text-secondary mb-1">15+</div>
+            <div className="text-2xl font-bold text-secondary mb-1">30+</div>
             <div className="text-sm text-muted-foreground">سنة خبرة</div>
           </div>
         </div>

@@ -25,7 +25,7 @@ export function Hero() {
           </h1>
           
           <p className="max-w-xl mr-0 ml-auto text-muted-foreground text-lg leading-relaxed">
-            مركز طبي متكامل يضم <strong className="text-foreground">{STATISTICS.specialists} طبيب اختصاصي</strong> و<strong className="text-foreground">{STATISTICS.clinics} عيادة تخصصية</strong>، مع مختبر وأشعة متطورة - كل ما تحتاجونه تحت سقف واحد.
+            مركز طبي رائد يجمع بين خبرة أكثر من <strong className="text-foreground">{STATISTICS.specialists} طبيب اختصاصي</strong>، وأحدث التقنيات في المختبر والأشعة، لنقدم لكم رعاية صحية شاملة ومتكاملة تحت سقف واحد.
           </p>
 
           <div className="flex flex-col gap-3 w-full md:flex-row md:flex-wrap md:justify-start">

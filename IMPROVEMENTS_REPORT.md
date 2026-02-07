@@ -76,7 +76,7 @@ We have successfully completed a comprehensive overhaul of your healthcare cente
 
 #### ✅ **Hero Section Improvements:**
 - **Better Headline:** "صحتكم أمانة في أيدٍ خبيرة" (more emotional)
-- **Trust Badge:** "أكثر من 15+ سنة من الثقة والخبرة"
+- **Trust Badge:** "أكثر من 30+ سنة من الثقة والخبرة"
 - **Statistics Integration:** Shows patient count dynamically
 - **Improved CTAs:**
   - WhatsApp button with icon (green, prominent)
